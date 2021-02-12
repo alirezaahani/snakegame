@@ -2,6 +2,10 @@ from turtle import *
 import random
 import time
 
+wndw = Screen()
+wndw.setup(width=600, height=600)
+wndw.tracer(0)
+
 def up():
     snake.setheading(90)
 def down():
@@ -75,5 +79,6 @@ while True:
     move()
 
     time.sleep(0.1)
+    wndw.update()
 
-mainloop()
+wndw.mainloop()
